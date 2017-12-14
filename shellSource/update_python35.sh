@@ -6,18 +6,13 @@ sudo yum install gcc -y
 sudo yum groupinstall "Development tools" -y
 sudo yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel -y
 
-# 下载Python3.5的源码包并编译
-wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz #其中3.5.2可修改成自己想要的版本
+# download Python3.5.2 rar
+wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz #3.5.2 is i choosed version you can change
 tar xf Python-3.5.2.tgz
 cd Python-3.5.2
-./configure --prefix=/usr/local --enable-shared  #把python3安装在此目录，这里注意下，后面有详解
+./configure --prefix=/usr/local --enable-shared  #let the programe installed in /usr/local folder
 make
-make install
+sudo make install
 
-rm -rf Python-3.5.2.tgz # remove downloadFile
-
-# 创建Python3.5软连接
-ln –s /usr/local/bin/python3 /usr/bin/python3   # 
-
-
-
+sudo rm -rf Python-3.5.2.tgz # remove downloadFile
+sudo rm -rf Python-3.5.2 # remove folder
