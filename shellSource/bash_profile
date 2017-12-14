@@ -43,3 +43,4 @@ fi
 PATH=$PATH:$HOME/bin
 
 export PATH
+export LD_LIBRARY_PATH=/usr/local/lib/

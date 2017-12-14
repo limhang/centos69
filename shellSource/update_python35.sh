@@ -14,5 +14,3 @@ cd Python-3.5.2
 make
 sudo make install
 
-sudo rm -rf Python-3.5.2.tgz # remove downloadFile
-sudo rm -rf Python-3.5.2 # remove folder
