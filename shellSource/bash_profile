@@ -1,0 +1,45 @@
+##open app
+alias v="vim"
+
+##open file recent
+
+##git quick_code
+alias ga="git add ."
+alias gs="git status"
+alias gc="git commit -m"
+alias gcr="git commit -m "常规修改""
+alias gps="git push origin master"
+alias gdev="git push origin dev"
+alias gpl="git pull"
+
+##python quick_code
+alias active="source ./bin/activate"
+alias pp="pip install -i https://pypi.tuna.tsinghua.edu.cn/simple"
+alias py="python"
+
+##quick_key_system
+alias .="cd .."
+alias l="ls"
+alias ..="cd ../.."
+alias ...="cd ../../.."
+alias c="clear"
+alias sbash="vim ~/.bash_profile"
+alias svbash="source ~/.bash_profile"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias p="pwd"
+alias tcp_hexo="lsof -i:4000"
+
+##mysql
+alias sql="mysql -u root -p"
+
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
