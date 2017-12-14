@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder "~/centosData", "/home/vagrant/data"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -70,11 +70,11 @@ Vagrant.configure("2") do |config|
   # SHELL
 
   # update php to php7.0version
-  config.vm.provision "shell", path: "shellSource/update_php70.sh"
+  # config.vm.provision "shell", path: "shellSource/update_php70.sh"
   # install python35 into your machine
-  config.vm.provision "shell", path: "shellSource/update_python35.sh"
+  # config.vm.provision "shell", path: "shellSource/update_python35.sh"
   # configure your own bash_profile
-  config.vm.provision "shell", path: "shellSource/customAlias.sh" , args: "/vagrant/shellSource/bash_profile"
+  # config.vm.provision "shell", path: "shellSource/customAlias.sh" , args: "/vagrant/shellSource/bash_profile"
   # configure your own vimrc
-  config.vm.provision "shell", path: "shellSource/customVimrc.sh" , args: "/vagrant/shellSource/vimrc"
+  # config.vm.provision "shell", path: "shellSource/customVimrc.sh" , args: "/vagrant/shellSource/vimrc"
 end

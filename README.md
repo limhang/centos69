@@ -25,6 +25,24 @@ if you are familiar to vagrant. you will know this section is doing what. forgiv
 
 ### version 0.1
 support function
-* a
-* b
-* c
+`a b c`
+
+## known issue
+### sync folder fail
+terminal error show
+
+```
+Vagrant was unable to mount VirtualBox shared folders. This is usually
+because the filesystem "vboxsf" is not available. This filesystem is
+made available via the VirtualBox Guest Additions and kernel module.
+Please verify that these guest additions are properly installed in the
+guest. This is not a bug in Vagrant and is usually caused by a faulty
+Vagrant box. For context, the command attempted was:
+```
+
+you can use this command in your terminal [in folder where Vagantfile located]
+```
+vagrant plugin install vagrant-vbguest
+```
+
+so you can execute `vagrant reload --provision`
