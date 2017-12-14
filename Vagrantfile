@@ -70,11 +70,11 @@ Vagrant.configure("2") do |config|
   # SHELL
 
   # update php to php7.0version
-   config.vm.provision "shell", path: "shellSource/update_php70.sh"
+  config.vm.provision "shell", path: "shellSource/update_php70.sh"
   # install python35 into your machine
-   config.vm.provision "shell", path: "shellSource/update_python35.sh"
+  config.vm.provision "shell", path: "shellSource/update_python35.sh"
   # configure your own bash_profile
-   config.vm.provision "shell", path: "shellSource/customAlias.sh" , args: "/vagrant/shellSource/bash_profile"
+  config.vm.provision "shell", path: "shellSource/customAlias.sh" , args: "/vagrant/shellSource/bash_profile"
   # configure your own vimrc
-   config.vm.provision "shell", path: "shellSource/customVimrc.sh" , args: "/vagrant/shellSource/vimrc"
+  config.vm.provision "shell", path: "shellSource/customVimrc.sh" , args: "/vagrant/shellSource/vimrc"
 end

@@ -14,3 +14,11 @@ cd Python-3.5.2
 make
 sudo make install
 
+# delete useless file and folder
+cd ..
+sudo rm -rf Python-3.5.2
+sudo rm -rf Python-3.5.2.tgz
+
+# create link -- fixed bug [pip3 install xxx could not find lib]
+sudo ln -s /usr/local/bin/pip3 /usr/bin/pip3
+sudo ln -s /usr/local/lib/libpython3.5m.so.1.0 /usr/lib/libpython3.5m.so.1.0

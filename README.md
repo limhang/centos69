@@ -46,3 +46,10 @@ vagrant plugin install vagrant-vbguest
 ```
 
 so you can execute `vagrant reload --provision`
+
+### pip3 or lib bug
+when i installed python35, i used pip3 install virtualenv, but this has a error about not find a special lib.
+
+you can use link command to fix it. but the strange things is it not work, when i reload vagrant ,it works...
+
+i do not why. so i decided `link pip3 special lib in the scripts` -- **read this `warning:vagrant must be reload`**
