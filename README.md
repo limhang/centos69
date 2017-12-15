@@ -27,6 +27,9 @@ this function is useful for v0.2 . shell script is mysqlInstall.sh
 the step `e` is not install some software . this step just configure python-virtualenv and mysql configure .
 example : we will set mysql root password and something else.
 
+### f、make the python scratch workflow work well. include python-virtualenv-lib && scratch-demo-script
+the step `f` is also not install software . so it has integrated in centos69v03.box
+
 ## package box release version
 if you are familiar to vagrant. you will know this section is doing what. forgive my not primitive English .you know what I say.
 
@@ -37,6 +40,10 @@ support function
 ### version 0.2
 support function
 `a b c d e`
+
+### version 0.3
+support function
+`a b c d e f`
 
 ## known issue
 ### sync folder fail
