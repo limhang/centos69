@@ -30,6 +30,9 @@ example : we will set mysql root password and something else.
 ### f、make the python scratch workflow work well. include python-virtualenv-lib && scratch-demo-script
 the step `f` is also not install software . so it has integrated in centos69v03.box
 
+### g、install nginx 
+this step install nginx into the virtual machine. you can type `centos.com` in your broswer, of course, you need configure your etc/hosts first. `192.168.33.10  centos.com`. when you configured etc/hosts. and you will see `hello word`. this indicate you have install nginx success.
+
 ## package box release version
 if you are familiar to vagrant. you will know this section is doing what. forgive my not primitive English .you know what I say.
 
@@ -44,6 +47,10 @@ support function
 ### version 0.3
 support function
 `a b c d e f`
+
+### version 0.4
+support function
+`a b c d e f g`
 
 ## known issue
 ### sync folder fail
