@@ -14,3 +14,4 @@ sudo chkconfig nginx on
 sudo cp /vagrant/shellSource/nginx.conf /etc/nginx/conf.d/site.conf
 sudo chmod 644 /etc/nginx/conf.d/site.conf
 sudo /etc/init.d/nginx restart
+sudo ln -s /home/vagrant/data/php70/laravelDemo /usr/share/nginx/laravelDemo
