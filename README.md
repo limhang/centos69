@@ -71,3 +71,7 @@ when i installed python35, i used pip3 install virtualenv, but this has a error 
 you can use link command to fix it. but the strange things is it not work, when i reload vagrant ,it works...
 
 i do not why. so i decided `link pip3 special lib in the scripts` -- **read this `warning:vagrant must be reload`**
+
+
+## Document
+[more detail](http://blog.coderhelper.cn/%E9%80%9A%E7%94%A8%E6%8A%80%E8%83%BD/%E5%88%B6%E4%BD%9Ccentos69box.html)
