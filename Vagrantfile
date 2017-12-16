@@ -22,11 +22,11 @@ Vagrant.configure("2") do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 80, host: 8989
+  config.vm.network "forwarded_port", guest: 80, host: 9090
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network "private_network", ip: "192.168.33.10"
+  # config.vm.network "private_network", ip: "192.168.33.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -69,5 +69,8 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
 
-  # install nginx 
+  # configure your own bash_profile
+#  config.vm.provision "shell", path: "shellSource/customAlias.sh" , args: "/vagrant/shellSource/bash_profile"
+  # configure your own vimrc
+#  config.vm.provision "shell", path: "shellSource/customVimrc.sh" , args: "/vagrant/shellSource/vimrc"
 end

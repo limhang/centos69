@@ -33,6 +33,9 @@ the step `f` is also not install software . so it has integrated in centos69v03.
 ### g、install nginx 
 this step install nginx into the virtual machine. you can type `centos.com` in your broswer, of course, you need configure your etc/hosts first. `192.168.33.10  centos.com`. when you configured etc/hosts. and you will see `hello word`. this indicate you have install nginx success.
 
+### h、integrate php70 nginx redis laravel node git so many software [fork from homestead/laravel 501]
+because i'd not familiar with nginx configure. i try it. But it makes me crazy. allways feedback 403. i know this is access issuses. the end, i choose homestead/laravel. so version 0.5 is different to all of before version. it based on homestead/laravel. mainly for laravel development. The vm system is ubuntu.
+
 ## package box release version
 if you are familiar to vagrant. you will know this section is doing what. forgive my not primitive English .you know what I say.
 
@@ -51,6 +54,10 @@ support function
 ### version 0.4
 support function
 `a b c d e f g`
+
+### version 0.5 
+support function
+`a b c d e f g h`
 
 ## known issue
 ### sync folder fail
